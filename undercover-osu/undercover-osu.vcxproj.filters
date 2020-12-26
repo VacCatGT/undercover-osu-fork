@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Entry">
+      <UniqueIdentifier>{2a43232e-98bc-46ab-8265-5c3cbb8807da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entry\Threads">
+      <UniqueIdentifier>{311133de-2066-41b9-baf8-6ef0538b68ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entry\Threads\Threads">
+      <UniqueIdentifier>{ee742800-1b92-41b8-a2fd-6b9d6e862ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies">
+      <UniqueIdentifier>{0e848262-074e-4d67-91dd-1e3025fcf648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\ImGui">
+      <UniqueIdentifier>{66cdccb6-6b47-47e6-857c-b5862369a4ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\gl3w">
+      <UniqueIdentifier>{00f832fa-a02c-4276-85de-5957c9267289}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\gl3w\GL">
+      <UniqueIdentifier>{1d62cc11-9cd3-4713-98a6-e6165ef041ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\MinHook">
+      <UniqueIdentifier>{76e1298f-6109-4cfd-825c-47dc393e0611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\MinHook\hde">
+      <UniqueIdentifier>{fdcccb31-9153-41ac-a41f-a0d16ea200d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{f070602d-a1ae-4beb-b6d6-465998fefb54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\Functions">
+      <UniqueIdentifier>{f998762e-4c88-4e7b-be2b-167292956b9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Overlay">
+      <UniqueIdentifier>{15ea1b24-c2e3-46ce-85c9-f9bab83d9a15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Overlay\Functions">
+      <UniqueIdentifier>{4799416c-4ee9-4728-aa78-8b87138c5247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{45848445-25d0-4b02-b326-2e724a9c6b7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Functions">
+      <UniqueIdentifier>{10f07551-0f45-47e6-88c5-0f1f3a02e4f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{51c52911-9033-464b-b7a5-9781473d3eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sdk">
+      <UniqueIdentifier>{20d2ceb2-3010-47ef-988f-06a42a7f02ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sdk\Utilities">
+      <UniqueIdentifier>{14913fab-03ef-4e4a-a9c4-dfda24f97f8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sdk\Utilities\OsuProcess">
+      <UniqueIdentifier>{da1316af-a5d2-41da-812d-b380c75d8608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sdk\Audio">
+      <UniqueIdentifier>{e4631414-b2cc-4481-b1e0-666492dc1957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sdk\Audio\Functions">
+      <UniqueIdentifier>{93a4108f-4fd9-4243-b690-214f84a25f84}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dependencies\ImGui\imgui.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGui\imgui_demo.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGui\imgui_draw.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGui\imgui_impl_opengl3.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGui\imgui_impl_win32.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGui\imgui_widgets.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\gl3w\GL\gl3w.c">
+      <Filter>Dependencies\gl3w\GL</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\MinHook\buffer.c">
+      <Filter>Dependencies\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\MinHook\hook.c">
+      <Filter>Dependencies\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\MinHook\trampoline.c">
+      <Filter>Dependencies\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\MinHook\hde\hde32.c">
+      <Filter>Dependencies\MinHook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\MinHook\hde\hde64.c">
+      <Filter>Dependencies\MinHook\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="Entry\DllMain.cpp">
+      <Filter>Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="Entry\Threads\Threads\OnLoad.cpp">
+      <Filter>Entry\Threads\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\Functions\Hooks.cpp">
+      <Filter>Hooks\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\Functions\wglSwapBuffers.cpp">
+      <Filter>Hooks\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Overlay\Functions\Overlay.cpp">
+      <Filter>Overlay\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Overlay\Functions\Menu.cpp">
+      <Filter>Overlay\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\Functions\MsgProc.cpp">
+      <Filter>Hooks\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Input\Functions\Input.cpp">
+      <Filter>Input\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\Utilities\OsuProcess\OsuProcess.cpp">
+      <Filter>Sdk\Utilities\OsuProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\Audio\Functions\OsuAudio.cpp">
+      <Filter>Sdk\Audio\Functions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dependencies\ImGui\imconfig.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGui\imgui.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGui\imgui_impl_opengl3.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGui\imgui_impl_win32.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGui\imgui_internal.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGui\imstb_rectpack.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGui\imstb_textedit.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGui\imstb_truetype.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\gl3w\GL\gl3w.h">
+      <Filter>Dependencies\gl3w\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\gl3w\GL\glcorearb.h">
+      <Filter>Dependencies\gl3w\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\MinHook\buffer.h">
+      <Filter>Dependencies\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\MinHook\minhook.h">
+      <Filter>Dependencies\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\MinHook\trampoline.h">
+      <Filter>Dependencies\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\MinHook\hde\hde32.h">
+      <Filter>Dependencies\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\MinHook\hde\hde64.h">
+      <Filter>Dependencies\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\MinHook\hde\pstdint.h">
+      <Filter>Dependencies\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\MinHook\hde\table32.h">
+      <Filter>Dependencies\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\MinHook\hde\table64.h">
+      <Filter>Dependencies\MinHook\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="Entry\Threads\Threads.h">
+      <Filter>Entry\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\Hooks.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Overlay\Overlay.h">
+      <Filter>Overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="Input\Input.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Config.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\Utilities\OsuProcess.h">
+      <Filter>Sdk\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\Audio\OsuAudio.h">
+      <Filter>Sdk\Audio</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

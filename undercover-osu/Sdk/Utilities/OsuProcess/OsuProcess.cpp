@@ -1,4 +1,5 @@
 ﻿#include "../OsuProcess.h"
+#include <iostream>
 
 void OsuProcess::dumpMemoryRegions()
 {
@@ -6,12 +7,13 @@ void OsuProcess::dumpMemoryRegions()
 
 	MEMORY_BASIC_INFORMATION32 mbi;
 	LPCVOID address = 0;
-	
+
 	while (VirtualQueryEx(GetCurrentProcess(), address, reinterpret_cast<PMEMORY_BASIC_INFORMATION>(&mbi), sizeof(mbi)) != 0)
 	{
-		if (mbi.State == MEM_COMMIT && mbi.Protect >= 0x10 && mbi.Protect <= 0x80)
-			memoryRegions.push_back(*new MemoryRegion(mbi));
 
+		if (mbi.State == MEM_COMMIT && mbi.Protect >= 0x10 && mbi.Protect <= 0x80) {
+			memoryRegions.push_back(*new MemoryRegion(mbi));
+		}
 		address = reinterpret_cast<LPCVOID>(mbi.BaseAddress + mbi.RegionSize);
 	}
 }
@@ -39,8 +41,9 @@ uintptr_t OsuProcess::FindSignature(const char* pattern, const char* mask)
 				}
 			}
 
-			if (found)
+			if (found) {
 				return region.BaseAddress + i;
+			}
 		}
 	}
 	

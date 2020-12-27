@@ -74,23 +74,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\gl3w;C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\ImGui;C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\MinHook;</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\Librarys</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);Dependencies\gl3w;Dependencies\ImGui;Dependencies\MinHook</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\gl3w;C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\ImGui;C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\MinHook;</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\Librarys</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);Dependencies\gl3w;Dependencies\ImGui;Dependencies\MinHook</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\ImGui;C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\gl3w;C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\MinHook;</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\Librarys</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);Dependencies\ImGui;Dependencies\gl3w;Dependencies\MinHook</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\ImGui;C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\gl3w;C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\MinHook;</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\Librarys</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);Dependencies\ImGui;Dependencies\gl3w;Dependencies\MinHook</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

@@ -6,6 +6,5 @@ void Threads::OnLoad() {
 	AllocConsole();
 	freopen_s(reinterpret_cast<FILE**>(stdout), "CONOUT$", "w", stdout);
 #endif // _DEBUG
-
 	Hooks::CreateHooks();
 }

@@ -12,7 +12,7 @@ public:
 	};
 	struct Timewarp {
 		static inline bool isEnabled;
-		static inline float multiplier;
+		static inline float multiplier = 1;
 	};
 	struct AimAssist {
 		static inline bool isEnabled;

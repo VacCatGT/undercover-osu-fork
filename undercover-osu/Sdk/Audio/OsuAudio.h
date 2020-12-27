@@ -11,5 +11,6 @@ public:
 
 class Audio {
 public:
+	static void SetRateMultiplier(double multiplier);
 	static void SetRate(double rate);
 };

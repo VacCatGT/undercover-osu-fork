@@ -11,5 +11,5 @@ void Threads::OnLoad() {
 	Hooks::CreateHooks();
 
 	while (1)
-		Audio::SetRate(0.1);
+		Audio::SetRateMultiplier(Config::Timewarp::multiplier);
 }

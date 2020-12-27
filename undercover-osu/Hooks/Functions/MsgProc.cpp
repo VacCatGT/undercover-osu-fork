@@ -11,10 +11,10 @@ LRESULT CALLBACK Hooks::MsgProc(int nCode, WPARAM wParam, LPARAM lParam) {
 
 	switch (wParam == PM_REMOVE) {
 	case TRUE:
-		if(pMsg->message == WM_KEYDOWN && pMsg->wParam == VK_HOME)
+		if (pMsg->message == WM_KEYDOWN && pMsg->wParam == VK_HOME)
 			Overlay::Toggle();
 
-		if(Menu::isOpen)
+		if (Menu::isOpen)
 			ImGui_ImplWin32_WndProcHandler(pMsg->hwnd, pMsg->message, pMsg->wParam, pMsg->lParam);
 		break;
 	default:
@@ -35,14 +35,14 @@ LRESULT CALLBACK Hooks::MsgProc(int nCode, WPARAM wParam, LPARAM lParam) {
 	default:
 		break;
 	}
-	
+
 	return CallNextHookEx(Hooks::GetMsgProcHook, nCode, wParam, lParam);
 }
 
-void Hooks::UpdateMessages(DWORD* dwTid) {
+void Hooks::UpdateMessages() {
 
 	while(!Hooks::GetMsgProcHook)
-		Hooks::GetMsgProcHook = SetWindowsHookExW(3, Hooks::MsgProc, GetModuleHandleW(NULL), *dwTid);
+		Hooks::GetMsgProcHook = SetWindowsHookExW(3, Hooks::MsgProc, GetModuleHandleW(NULL), Hooks::threadId);
 
 	MSG msg;
 	while (GetMessageW(&msg, NULL, 0, 0)) {

@@ -10,7 +10,8 @@ private:
 	static inline HHOOK GetMsgProcHook;
 	static inline fnWglSwapBuffers oWglSwapBuffers;
 	static inline HWND hWnd;
-	static void UpdateMessages(DWORD* dwTid);
+	static inline DWORD threadId;
+	static void UpdateMessages();
 	static LRESULT CALLBACK MsgProc(int nCode, WPARAM wParam, LPARAM lParam);
 	static BOOL WINAPI wglSwapBuffersHook(_In_ HDC hDc);
 };

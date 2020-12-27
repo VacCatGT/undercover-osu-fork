@@ -100,7 +100,7 @@ void Overlay::Render(HDC hDc) {
 				}
 				break;
 			case 2:
-				
+
 				ImGui::SetCursorPos(ImVec2(5, 82));
 				ImGui::Text("Aim Assist");
 				ImGui::SetCursorPos(ImVec2(5, 107));
@@ -127,8 +127,16 @@ void Overlay::Render(HDC hDc) {
 				}
 				break;
 			case 4:
+				ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.2f, 0.2f, 0.2f, 1.0f)); {
 				ImGui::SetCursorPos(ImVec2(5, 82));
 				ImGui::Text("Misc");
+				ImGui::SetCursorPos(ImVec2(100, 82));
+				if (ImGui::Button("Save Config", ImVec2(110, 50)))
+					Config::SaveConfig();
+				ImGui::SetCursorPos(ImVec2(210, 82));
+				if (ImGui::Button("Load Config", ImVec2(110, 50)))
+					Config::LoadConfig();
+			}ImGui::PopStyleColor();
 				break;
 			default: break;
 			}

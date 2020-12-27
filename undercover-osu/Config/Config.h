@@ -1,13 +1,15 @@
-
 class Config {
 public:
+
+	static void SaveConfig();
+	static void LoadConfig();
+
 	struct Relax {
 		static inline bool isEnabled;
 		static inline bool manualSpinners;
 		static inline bool waitLate;
 		static inline int tappingStyle;
 		static inline int maxBpm = 10;
-		static inline int singleTapBpm = 10;
 		static inline int alternationBpm = 10;
 	};
 	struct Timewarp {

@@ -64,6 +64,9 @@
     <Filter Include="Sdk\Audio\Functions">
       <UniqueIdentifier>{93a4108f-4fd9-4243-b690-214f84a25f84}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Config\Functions">
+      <UniqueIdentifier>{4942762d-a4f5-4b82-8d3c-33129846a639}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dependencies\ImGui\imgui.cpp">
@@ -131,6 +134,9 @@
     </ClCompile>
     <ClCompile Include="Sdk\Audio\Functions\OsuAudio.cpp">
       <Filter>Sdk\Audio\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\Functions\Config.cpp">
+      <Filter>Config\Functions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

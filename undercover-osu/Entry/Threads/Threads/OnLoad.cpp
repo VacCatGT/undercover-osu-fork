@@ -1,5 +1,6 @@
 ﻿#include "../Threads.h"
 #include "../../../Hooks/Hooks.h"
+#include "../../../Config/Config.h"
 
 void Threads::OnLoad() {
 #if _DEBUG

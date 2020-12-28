@@ -58,10 +58,15 @@ void Overlay::Render(HDC hDc) {
 		}ImGui::PopFont();
 
 		ImGui::Separator();
+		ImGui::GetForegroundDrawList()->AddLine(ImVec2(ImGui::GetWindowPos().x + 95, ImGui::GetWindowPos().y +77), ImVec2(ImGui::GetWindowPos().x + 95,
+		ImGui::GetWindowPos().y + 510), ImGui::GetColorU32(ImVec4(0.58f, 0.58f, 0.58f, 0.50f)), 1);
 
 		ImGui::PushFont(Overlay::menuMainFont); {
 			switch (currentTab) {
 			case 0:
+				ImGui::SetCursorPos(ImVec2(69, 75));
+				ImGui::GetForegroundDrawList()->AddLine(ImGui::GetCursorScreenPos(), ImVec2(ImGui::GetCursorScreenPos().x + 75,
+				ImGui::GetCursorScreenPos().y), ImGui::GetColorU32(ImVec4(1, 1, 1, 1)), 1);
 				ImGui::SetCursorPos(ImVec2(5, 84));
 				ImGui::Text("Relax");
 				ImGui::SetCursorPos(ImVec2(5, 109));
@@ -82,11 +87,14 @@ void Overlay::Render(HDC hDc) {
 					ImGui::SliderInt("3.", &Config::Relax::alternationBpm, 10, 300);
 					ImGui::SetCursorPos(ImVec2(100, 234));
 					ImGui::Checkbox("Manual Spinners", &Config::Relax::manualSpinners);
-					ImGui::SetCursorPos(ImVec2(100, 264));
+				    ImGui::SetCursorPos(ImVec2(100, 264));
 					ImGui::Checkbox("Wait Late", &Config::Relax::waitLate);
 				}
 				break;
 			case 1:
+				ImGui::SetCursorPos(ImVec2(144, 75));
+				ImGui::GetForegroundDrawList()->AddLine(ImGui::GetCursorScreenPos(), ImVec2(ImGui::GetCursorScreenPos().x + 75,
+				ImGui::GetCursorScreenPos().y), ImGui::GetColorU32(ImVec4(1, 1, 1, 1)), 1);
 				ImGui::SetCursorPos(ImVec2(5, 84));
 				ImGui::Text("Timewarp");
 				ImGui::SetCursorPos(ImVec2(5, 109));
@@ -100,6 +108,9 @@ void Overlay::Render(HDC hDc) {
 				}
 				break;
 			case 2:
+				ImGui::SetCursorPos(ImVec2(219, 75));
+				ImGui::GetForegroundDrawList()->AddLine(ImGui::GetCursorScreenPos(), ImVec2(ImGui::GetCursorScreenPos().x + 75,
+				ImGui::GetCursorScreenPos().y), ImGui::GetColorU32(ImVec4(1, 1, 1, 1)), 1);
 				ImGui::SetCursorPos(ImVec2(5, 84));
 				ImGui::Text("Aim Assist");
 				ImGui::SetCursorPos(ImVec2(5, 109));
@@ -113,6 +124,9 @@ void Overlay::Render(HDC hDc) {
 				}
 				break;
 			case 3:
+				ImGui::SetCursorPos(ImVec2(294, 75));
+				ImGui::GetForegroundDrawList()->AddLine(ImGui::GetCursorScreenPos(), ImVec2(ImGui::GetCursorScreenPos().x + 75,
+				ImGui::GetCursorScreenPos().y), ImGui::GetColorU32(ImVec4(1, 1, 1, 1)), 1);
 				ImGui::SetCursorPos(ImVec2(5, 84));
 				ImGui::Text("Visuals");
 				ImGui::SetCursorPos(ImVec2(5, 109));
@@ -126,9 +140,13 @@ void Overlay::Render(HDC hDc) {
 				}
 				break;
 			case 4:
-				ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.2f, 0.2f, 0.2f, 1.0f)); {
+				ImGui::SetCursorPos(ImVec2(369, 75));
+				ImGui::GetForegroundDrawList()->AddLine(ImGui::GetCursorScreenPos(), ImVec2(ImGui::GetCursorScreenPos().x + 75,
+				ImGui::GetCursorScreenPos().y), ImGui::GetColorU32(ImVec4(1, 1, 1, 1)), 1);
 				ImGui::SetCursorPos(ImVec2(5, 84));
 				ImGui::Text("Misc");
+
+				ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.2f, 0.2f, 0.2f, 1.0f)); {
 				ImGui::SetCursorPos(ImVec2(100, 84));
 				if (ImGui::Button("Save Config", ImVec2(110, 50)))
 					Config::SaveConfig();

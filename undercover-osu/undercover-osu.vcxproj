@@ -72,23 +72,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\gl3w;C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\ImGui;C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\MinHook;C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\Config;</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\Librarys</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)undercover-osu\Dependencies\gl3w;$(SolutionDir)undercover-osu\Dependencies\ImGui;$(SolutionDir)undercover-osu\Dependencies\MinHook;$(SolutionDir)undercover-osu\Dependencies\Config</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(SolutionDir)undercover-osu\Dependencies\Librarys</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\gl3w;C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\ImGui;C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\MinHook;C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\Config;</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\Librarys</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)undercover-osu\Dependencies\gl3w;$(SolutionDir)undercover-osu\Dependencies\ImGui;$(SolutionDir)undercover-osu\Dependencies\MinHook;$(SolutionDir)undercover-osu\Dependencies\Config</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(SolutionDir)undercover-osu\Dependencies\Librarys</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\ImGui;C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\gl3w;C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\MinHook;C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\taocpp;</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\Librarys</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)undercover-osu\Dependencies\ImGui;$(SolutionDir)undercover-osu\Dependencies\gl3w;$(SolutionDir)undercover-osu\Dependencies\MinHook;$(SolutionDir)undercover-osu\Dependencies\taocpp;$(SolutionDir)undercover-osu\Dependencies\Config</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)undercover-osu\Dependencies\Librarys</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\ImGui;C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\gl3w;C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\MinHook;C:\Users\kat\Desktop\undercover-osu\undercover-osu\Dependencies\taocpp;</IncludePath>
-    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);C:\Users\kat\source\repos\imgui osu\imgui osu\Dependencies\Librarys</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)undercover-osu\Dependencies\ImGui;$(SolutionDir)undercover-osu\Dependencies\gl3w;$(SolutionDir)undercover-osu\Dependencies\MinHook;$(SolutionDir)undercover-osu\Dependencies\Config;$(SolutionDir)undercover-osu\Dependencies\taocpp</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)undercover-osu\Dependencies\Librarys</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

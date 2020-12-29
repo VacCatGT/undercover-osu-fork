@@ -1,0 +1,16 @@
+
+*.obj
+*.iobj
+*.dll
+*.pdb
+*.tlog
+*.ilk
+*.log
+*.idb
+*.recipe
+.vs/undercover-osu/v16/.suo
+*.ipdb
+*.opendb
+*.db-wal
+*.db-shm
+*.db

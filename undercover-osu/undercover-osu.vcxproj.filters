@@ -73,6 +73,12 @@
     <Filter Include="Sdk\Player\Functions">
       <UniqueIdentifier>{cfd92749-6457-496d-99cb-853a00c34232}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Hacks">
+      <UniqueIdentifier>{61ab56cf-df83-4dd2-bbbd-977587c8805d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hacks\Threads">
+      <UniqueIdentifier>{3a67fe9b-0a4d-4efd-ac8c-c162d3b7d325}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dependencies\ImGui\imgui.cpp">
@@ -146,6 +152,9 @@
     </ClCompile>
     <ClCompile Include="Sdk\Player\Functions\Player.cpp">
       <Filter>Sdk\Player\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Hacks\Threads\Hacks.cpp">
+      <Filter>Hacks\Threads</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -229,6 +238,9 @@
     </ClInclude>
     <ClInclude Include="Sdk\sdk.h">
       <Filter>Sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="Hacks\Hacks.h">
+      <Filter>Hacks</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

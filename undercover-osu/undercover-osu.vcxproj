@@ -24,6 +24,7 @@
     <ProjectGuid>{73627655-e613-4b5a-9697-deb90168a14d}</ProjectGuid>
     <RootNamespace>imguiosu</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>undercover-osu</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -172,6 +173,7 @@
     <ClCompile Include="Dependencies\MinHook\trampoline.c" />
     <ClCompile Include="Entry\DllMain.cpp" />
     <ClCompile Include="Entry\Threads\Threads\OnLoad.cpp" />
+    <ClCompile Include="Hacks\Threads\Hacks.cpp" />
     <ClCompile Include="Hooks\Functions\Hooks.cpp" />
     <ClCompile Include="Hooks\Functions\MsgProc.cpp" />
     <ClCompile Include="Hooks\Functions\wglSwapBuffers.cpp" />
@@ -203,6 +205,7 @@
     <ClInclude Include="Dependencies\MinHook\minhook.h" />
     <ClInclude Include="Dependencies\MinHook\trampoline.h" />
     <ClInclude Include="Entry\Threads\Threads.h" />
+    <ClInclude Include="Hacks\Hacks.h" />
     <ClInclude Include="Hooks\Hooks.h" />
     <ClInclude Include="Input\Input.h" />
     <ClInclude Include="Overlay\Overlay.h" />

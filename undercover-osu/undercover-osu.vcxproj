@@ -178,6 +178,7 @@
     <ClCompile Include="Overlay\Functions\Menu.cpp" />
     <ClCompile Include="Overlay\Functions\Overlay.cpp" />
     <ClCompile Include="Sdk\Audio\Functions\OsuAudio.cpp" />
+    <ClCompile Include="Sdk\Player\Functions\Player.cpp" />
     <ClCompile Include="Sdk\Utilities\OsuProcess\OsuProcess.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -205,6 +206,8 @@
     <ClInclude Include="Input\Input.h" />
     <ClInclude Include="Overlay\Overlay.h" />
     <ClInclude Include="Sdk\Audio\OsuAudio.h" />
+    <ClInclude Include="Sdk\Player\Player.h" />
+    <ClInclude Include="Sdk\sdk.h" />
     <ClInclude Include="Sdk\Utilities\OsuProcess.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

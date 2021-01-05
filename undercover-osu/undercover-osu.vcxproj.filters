@@ -64,6 +64,15 @@
     <Filter Include="Sdk\Audio\Functions">
       <UniqueIdentifier>{93a4108f-4fd9-4243-b690-214f84a25f84}</UniqueIdentifier>
     </Filter>
+<<<<<<< Updated upstream
+=======
+    <Filter Include="Sdk\Player">
+      <UniqueIdentifier>{30b08103-9f0c-4138-bb5b-1e501d0f5445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sdk\Player\Functions">
+      <UniqueIdentifier>{cfd92749-6457-496d-99cb-853a00c34232}</UniqueIdentifier>
+    </Filter>
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dependencies\ImGui\imgui.cpp">
@@ -132,6 +141,12 @@
     <ClCompile Include="Sdk\Audio\Functions\OsuAudio.cpp">
       <Filter>Sdk\Audio\Functions</Filter>
     </ClCompile>
+<<<<<<< Updated upstream
+=======
+    <ClCompile Include="Sdk\Player\Functions\Player.cpp">
+      <Filter>Sdk\Player\Functions</Filter>
+    </ClCompile>
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dependencies\ImGui\imconfig.h">
@@ -208,6 +223,12 @@
     </ClInclude>
     <ClInclude Include="Sdk\Audio\OsuAudio.h">
       <Filter>Sdk\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\Player\Player.h">
+      <Filter>Sdk\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\sdk.h">
+      <Filter>Sdk</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

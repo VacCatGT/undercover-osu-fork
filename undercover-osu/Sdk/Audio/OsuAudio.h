@@ -1,6 +1,4 @@
 #include <Windows.h>
-#include "../Utilities/OsuProcess.h"
-#include "../../Config/Config.h"
 
 class Bass {
 private:
@@ -11,6 +9,7 @@ public:
 
 class Audio {
 public:
+	static double OsuTrackRate();
 	static void SetRateMultiplier(double multiplier);
 	static void SetRate(double rate);
 };

@@ -2,6 +2,8 @@
 #include "../../../Hooks/Hooks.h"
 
 #include "../../../Sdk/Audio/OsuAudio.h"
+#include "../../../Sdk/Player/Player.h"
+#include "../../../Config/Config.h"
 
 void Threads::OnLoad() {
 #if _DEBUG
@@ -10,6 +12,18 @@ void Threads::OnLoad() {
 #endif // _DEBUG
 	Hooks::CreateHooks();
 
-	while (1)
-		Audio::SetRateMultiplier(Config::Timewarp::multiplier);
+	while (1) {
+		if (Player::IsLoaded()) {
+			if (Config::Timewarp::isEnabled) {
+				Audio::SetRateMultiplier(Config::Timewarp::multiplier);
+
+				Player::SetAudioCheckCount(0);
+			}
+			else {
+				Audio::SetRate(Audio::OsuTrackRate());
+			}
+		}
+
+		Sleep(1);
+	}
 }

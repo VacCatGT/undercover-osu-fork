@@ -4,8 +4,6 @@
 #include "../../Player/Player.h"
 
 uintptr_t trackPointer = *(uintptr_t*)(Process.FindSignature("\x56\x83\xEC\x38\x83\x3D", "xxxxxx") + 0x6);
-//don't use outside of testing branch. we'll figure out better approach later.
-uintptr_t modeAddress = *(uintptr_t*)(Process.FindSignature("\x8D\x45\xBC\x89\x46\x0C\x83\x3D", "xxxxxxxx") + 0x8);
 
 uintptr_t baseAddress() {
     return *(uintptr_t*)trackPointer;
@@ -29,14 +27,14 @@ double osuTrackRate()
 }
 
 void Audio::SetRateMultiplier(double multiplier) {
-    if (*(int*)modeAddress != 2)
+    if (!Player::IsLoaded())
         return;
 	
     SetRate(osuTrackRate() * multiplier);
 }
 
 void Audio::SetRate(double rate) {
-    if (*(int*)modeAddress != 2)
+    if (!Player::IsLoaded())
         return;
 	
     if (rate < 1)
@@ -51,5 +49,5 @@ void Audio::SetRate(double rate) {
         Bass::ChannelSetAttribute(trackHandle(), 65536, (float)(rate - 100.0));
     }
 
-    Player::SetAudioCheckCount(-2147483648);
+    //Player::SetAudioCheckCount(-2147483648);
 }

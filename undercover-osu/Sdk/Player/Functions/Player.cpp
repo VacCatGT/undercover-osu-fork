@@ -11,6 +11,16 @@ uintptr_t Player::GetBaseAddress() {
 	return *(uintptr_t*)(playerPointer);
 }
 
+bool Player::asyncLoadComplete()
+{
+	return *(bool*)(GetBaseAddress() + 0x182);
+}
+
+bool Player::IsLoaded()
+{
+	return GetBaseAddress() != NULL && asyncLoadComplete();
+}
+
 int Player::GetAudioCheckCount() {
 	return *(int*)(GetBaseAddress() + 0x14C);
 }

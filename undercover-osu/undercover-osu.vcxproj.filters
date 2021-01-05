@@ -67,6 +67,12 @@
     <Filter Include="Config\Functions">
       <UniqueIdentifier>{4942762d-a4f5-4b82-8d3c-33129846a639}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sdk\Player">
+      <UniqueIdentifier>{30b08103-9f0c-4138-bb5b-1e501d0f5445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sdk\Player\Functions">
+      <UniqueIdentifier>{cfd92749-6457-496d-99cb-853a00c34232}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dependencies\ImGui\imgui.cpp">
@@ -137,6 +143,9 @@
     </ClCompile>
     <ClCompile Include="Config\Functions\Config.cpp">
       <Filter>Config\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Sdk\Player\Functions\Player.cpp">
+      <Filter>Sdk\Player\Functions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -214,6 +223,12 @@
     </ClInclude>
     <ClInclude Include="Sdk\Audio\OsuAudio.h">
       <Filter>Sdk\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\Player\Player.h">
+      <Filter>Sdk\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Sdk\sdk.h">
+      <Filter>Sdk</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

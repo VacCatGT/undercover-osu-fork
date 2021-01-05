@@ -104,7 +104,7 @@ void Overlay::Render(HDC hDc) {
 					ImGui::SetCursorPos(ImVec2(100, 84));
 					ImGui::Text("Multiplier");
 					ImGui::SetCursorPos(ImVec2(100, 104));
-					ImGui::SliderFloat("1.", &Config::Timewarp::multiplier, 0.1f, 1.0f, "%.2f", 1);
+					ImGui::SliderFloat("1.", &Config::Timewarp::multiplier, 0.1f, 2.0f, "%.2f", 1);
 				}
 				break;
 			case 2:

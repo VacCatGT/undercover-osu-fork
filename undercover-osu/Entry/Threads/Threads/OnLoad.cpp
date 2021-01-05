@@ -1,4 +1,4 @@
-﻿#include "../Threads.h"
+#include "../Threads.h"
 #include "../../../Hooks/Hooks.h"
 #include "../../../Hacks/Hacks.h"
 
@@ -9,6 +9,5 @@ void Threads::OnLoad() {
 #endif // _DEBUG
 	Hooks::CreateHooks();
 
-			if (Config::Timewarp::isEnabled) {
-	}
+	CreateThread(nullptr, 0, reinterpret_cast<LPTHREAD_START_ROUTINE>(Hacks::TimewarpThread), nullptr, 0, nullptr);
 }

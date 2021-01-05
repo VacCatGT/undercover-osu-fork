@@ -18,6 +18,7 @@ void Threads::OnLoad() {
 				Audio::SetRateMultiplier(Config::Timewarp::multiplier);
 
 				Player::SetAudioCheckCount(0);
+				Player::SetDateTimeCheckCount(0);
 			}
 			else {
 				Audio::SetRate(Audio::OsuTrackRate());

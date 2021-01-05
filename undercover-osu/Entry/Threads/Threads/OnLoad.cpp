@@ -13,7 +13,7 @@ void Threads::OnLoad() {
 	Hooks::CreateHooks();
 
 	while (1) {
-		if (Player::IsLoaded()) {
+		if (Player::IsLoaded() && !Player::IsReplayMode()) {
 			if (Config::Timewarp::isEnabled) {
 				Audio::SetRateMultiplier(Config::Timewarp::multiplier);
 

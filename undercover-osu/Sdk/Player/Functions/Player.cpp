@@ -21,6 +21,11 @@ bool Player::IsLoaded()
 	return GetBaseAddress() != NULL && asyncLoadComplete();
 }
 
+bool Player::IsReplayMode()
+{
+	return *(bool*)(GetBaseAddress() + 0x17A);
+}
+
 int Player::GetAudioCheckCount() {
 	return *(int*)(GetBaseAddress() + 0x14C);
 }
